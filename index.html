@@ -2,22 +2,18 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor</title> 
     <link  id="css" rel="stylesheet" href="Estilo/estilo.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="conversor.js"></script>
-<script>
-  if(screen.width <=559){
- document.getElementById("css").href = "Estilo/mobile.css"
-  }
-</script>
 </head>
 <body>
    
   <div id="interface"> 
       <h1 id="titulo">Conversor de moedas</h1>
-    <span>Valor: </span> <br id="br"> <input id="entrada" type="number">  <br id="br">
-    <span id="br">Moeda: </span> 
+    <input id="entrada" type="number" placeholder="Digite o valor aqui">
+    <span id="br">Moeda: </span>
     <select id="moedas">
         <option value='0'>Selecione</option>
         <option value='1'>Dólar</option>
