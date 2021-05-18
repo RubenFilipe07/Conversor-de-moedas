@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Conversor</title> 
-    <link  id="css" rel="stylesheet" href="Estilo/estilo.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="conversor.js"></script>
-<script>
-  if(screen.width <=559){
- document.getElementById("css").href = "Estilo/mobile.css"
-  }
-</script>
+   <meta charset="UTF-8">
+   <title>Conversor</title> 
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" media="(min-width: 599px)" href="Estilo/principal.css">
+   <link rel="stylesheet" media="(max-width: 600px)" href="Estilo/mobile.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="conversor.js"></script>
 </head>
 <body>
-   
+
   <div id="interface"> 
-      <h1 id="titulo">Conversor de moedas</h1>
-    <span>Valor: </span> <br id="br"> <input id="entrada" type="number">  <br id="br">
-    <span id="br">Moeda: </span> 
-    <select id="moedas">
-        <option value='0'>Selecione</option>
-        <option value='1'>Dólar</option>
-        <option value='2'>Euro</option>
-        <option value='3'>Peso argentino</option>
-        <option value='4'>Litecoin</option>
-        <option value='5'>Bitcoin</option>
-        <option value='6'>Ethereum</option>
-        <option value='7'>Libra Esterlina</option>
-        <option value='8'>Dólar canadense</option>
-        <option value='9'>Dólar australiano</option>
-        <option value='10'>Iene Japonês</option>
-        <option value='11'>Franco Suíço</option>
-    </select>  
-    <button onclick="converter()">Calcular</button>
-    <br>
-    <h3 id="saida"></h3> 
-    <span id="atualizacao"></span>
+      <h1 id="titulo">Conversor de moedas</h1> 
+      <label>Valor:</label> </span>  
+      <input id="entrada" type="number">   
+         
+        <select id="moedas">
+              <option value='NULL'>Selecione</option>
+              <option value='EUR'>Euro</option>
+              <option value='USD'>Dólar</option>
+              <option value='USDT'>Dólar turismo</option>
+              <option value='CAD'>Dólar canadense</option>
+              <option value='AUD'>Dólar australiano</option>
+              <option value='GBP'>Libra Esterlina</option>
+              <option value='ARS'>Peso argentino</option>
+              <option value='JPY'>Iene Japonês</option>
+              <option value='CNY'>Yuan Chinês</option>
+              <option value='CHF'>Franco Suíço</option>
+              <option value='ILS'>Novo Shekel Israelense</option>
+              <option value='BTC'>Bitcoin</option>
+              <option value='ETH'>Ethereum</option>
+              <option value='LTC'>Litecoin</option>
+              <option value='DOGE'>Dogecoin</option>
+              <option value='XRP'>XRP</option>
+        </select>  
+
+      <button onclick="converter()">Calcular</button>
+      <h3 id="saida"></h3> 
+      <span id="atualizacao"></span>
   </div>  
+
 </body>
 </html>

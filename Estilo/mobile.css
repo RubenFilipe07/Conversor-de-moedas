@@ -1,69 +1,82 @@
-body{
-    max-width: 95%;
-    margin: auto;
-    background:rgb(90, 90, 90);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30pt;
+body {
+  max-width: 95%;
+  margin: auto;
+  background: radial-gradient(circle, rgba(63, 203, 251, 1) 0%, rgba(109, 70, 252, 1) 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 5vw;
 }
 
-#interface{
-    background-color: white;
-    padding: 60px;
-    margin: 25% auto;
-    border: 2px solid rgba(136, 136, 136, 0.7);
-    border-radius: 5px;
-    max-height: 80%;
+#interface {
+  background-color: white;
+  padding: 30px;
+  margin: 45% auto;
+  border: 2px solid rgba(136, 136, 136, 0.7);
+  border-radius: 7px;
+  max-height: 80%;
 }
 
-div button{
-   padding: 20px;
-   border: 1px solid #eee;
-   border-radius: 6px;
-   background-color: greenyellow;
-   width: 40%;
-   margin: 65px 25% 40px 25%;
-   font-size: 35pt;
+div button {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: greenyellow;
+  width: 97.5%;
+  margin: 10px auto 0px auto;
+  font-size: 4.5vw;
 }
 
-button:hover{
-  color: white; 
+button:hover {
+  color: white;
   border: 1px solid black;
   transition: 350ms;
-  background-color: rgba(109,70,252,1);
+  background-color: rgba(109, 70, 252, 1);
 }
 
-#titulo{
-  font-size: 52pt;
+#titulo {
+  font-size: 6.7vw;
   text-align: center;
   margin-top: -20px;
 }
 
-span{
-  font-size: 35pt;   
+span {
+  font-size: 6vw;
 }
 
-input{
-  border: 2px solid black;     
-  height: 60px;
-  width: 90%;
+input {
+  border: 1px solid rgb(156, 156, 156);
+  height: 25px;
+  width: 78%;
   margin-top: 10px;
-  font-size: 35pt;
+  font-size: 5vw;
 }
 
-select{
-  height: 60px;
-  width: 68.5%;    
-  border: 1px solid rgb(156, 156, 156);  
-  font-size: 35pt;
-  margin: 30px 0px 0px 0px;
+select {
+  height: 30px;
+  width: 97.5%;
+  border: 1px solid rgb(156, 156, 156);
+  font-size: 5vw;
+  margin: 10px 0px 0px 0px;
 }
 
-#atualizacao{
-    margin-top: 10px; 
-    font-size: 28pt;
-    color: gray;
+#atualizacao {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  color: gray;
 }
 
-#saida{
-font-size: 30pt;
+#saida {
+  font-size: 5vw;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  input {
+    width: 70%;
+  }
+  select {
+    width: 90%;
+  }
 }
